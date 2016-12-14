@@ -1,0 +1,35 @@
+<head>
+	<title>Punchlike</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+{{> loginButtons}}
+<div class="title">
+	<h1>Punchlike</h1>
+	<p class='tagline'>Déposer et voter pour vos répliques de films préférés !</p>
+</div>
+{{#if currentUser}}
+<style>#login-buttons{
+	transform: translateY(0) !important;
+}</style>
+	{{> films }}
+{{/if}}
+</body>
+
+<template name="films">
+<div id="form">
+        <div>Ajoutez une réplique film :</div>
+		<textarea id="comment" type="textarea" placeholder="Réplique"></textarea><br>
+		<input id="name" type="text" placeholder="Nom du film"/><br>
+        <button id="submit_film">Ajouter</button>
+</div>
+	<ul>
+      {{#each all_films}}
+		  <li>  <p class='comment'>{{ comment }}  </p><p class='film'> – {{ name }}</p><div class="vote"><button id='plus'>+</button>    <span>{{counter}}</span>    <button id='moins'>-</button></div>
+		  </li>
+      {{/each}}
+	</ul>
+	<hr/>
+    
+</template>

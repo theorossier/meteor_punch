@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+body{
+	max-width: 960px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	padding: 100px 0;
+	border-bottom: 1px solid #E3E3E3;
+}
+
+.comment{
+	font-size: 30px;
+	font-weight: 700;
+}
+.tagline{
+	font-size: 20px;
+}
+
+.title{margin-top: 100px;
+margin-bottom: 60px;
+}
+span{
+	font-size: 10px;
+
+}
+.film, .tagline{
+	color:#BCBCBC;
+	font-weight: 300;
+}
+
+.vote{
+	margin: 30px;
+}
+
+h1{
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+
+textarea{
+	resize: none;
+	width: 300px;
+	height: 100px;
+	margin: 30px;
+}
+input[type=text]{
+width: 300px;
+
+}
+
+input[type=text], textarea{
+	background-color: #EFEFEF;
+	border: none;
+	padding: 20px;
+}
+button:hover{
+	cursor: pointer;
+}
+
+#submit_film, #login-buttons {
+	background-color: #000;
+	border: 1px solid #000;
+	color:#FFF;
+	padding:20px 40px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 30px 0;
+	transition: all 0.2s ease;
+}
+
+ #login-buttons a {
+ 	text-decoration: none;
+ }
+
+#submit_film:hover, #login-buttons:hover{
+	transition: all 0.2s ease;
+	background-color: #FFF;
+	color:#000;
+	border: 1px solid #000;
+
+}
+
+#login-buttons{
+	transform: translateY(350px);
+	font-size: 10px;
+	margin: 0;
+}
